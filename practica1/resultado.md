@@ -1,4 +1,4 @@
-**Práctica 1. Servidores Web de Altas Prestaciones**
+#**Práctica 1. Servidores Web de Altas Prestaciones**
 ##Preparación de las herramientas
 
 1. El profesor nos proporcionó la imagen de UbuntuServer por lo que una vez guardada en nuestro PC, pasamos ha crear la máquina virtual (en mi caso con VirtualBox).
