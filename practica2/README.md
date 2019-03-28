@@ -1,6 +1,7 @@
 <H1>Práctica 2. Servidores Web de Altas prestaciones</H1>
 <H2>Clonar la información de un sitio web</H2>
 	1. Instalamos la herramienta rsync
+	
   		`sudo apt-get install rsync`
   
  Para usar la herramienta y clonar un directoria cualquier: 
