@@ -14,4 +14,4 @@
 
 6. Una vez realizado esto, clonamos la máquina 1 y le cambiamos el hostname por maquina2.
 7. Modificamos en ambas máquinas el archivo "interfaces" que se encuentra situado en "/etc/network/" y añadimos la interfaz secundaria con la IP de nuestras máquinas, como se muestran en las imágenes 1 y 2.
-![img](http://www.dominio.com/carpeta/archivo.png)
+![img](https://github.com/lorcaspal/SWAP1819/tree/master/images/IPmaquina1)
