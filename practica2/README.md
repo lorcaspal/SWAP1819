@@ -6,7 +6,8 @@
  Para usar la herramienta y clonar un directoria cualquier: 
  
    `rsync -avz -e ssh ipmaquina2:dirmaquina_2 dir_maquina1`
-2. Acceder sin contrasesña con ssh de una máquina a la otra
+   
+   2. Acceder sin contrasesña con ssh de una máquina a la otra
 
 Escribimos en la Máquina secundaria:
 
@@ -17,13 +18,12 @@ Escribimos en la Máquina principal:
   `chmod 600 ~/.ssh/authorized_keys`
   
   `ssh-copy-id user_maquinasecundaria@direccionIPmaquinasecundaria`
-3. Mostramos el clon de una maquina a la otra:
+  
+  3. Mostramos el clon de una maquina a la otra:
  ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica2/images/ClonM1.PNG)
- 
-4. Mostramos la copia y acceso desde ssh sin contraseña:
+ 4. Mostramos la copia y acceso desde ssh sin contraseña:
  ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica2/images/copiaYaccesoSinClaveM1.PNG)
- 
-5. Programar tareas con crontab (se ubica en /etc/crontab) cron es un administrador procesos en segundo plano que ejecuta procesos en el instante indicado en el fichero crontab (se encuentra en /etc/crontab).
+ 5. Programar tareas con crontab (se ubica en /etc/crontab) cron es un administrador procesos en segundo plano que ejecuta procesos en el instante indicado en el fichero crontab (se encuentra en /etc/crontab).
 
   Para automatizar un nuevo proceso hay que seguir el siguiente orden:
 
