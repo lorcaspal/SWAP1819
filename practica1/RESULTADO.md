@@ -7,7 +7,7 @@
 3. Seguimos paso a paso el proceso de instalación, que encontramos en el documento proporcionado por el profesor.
 4. Definimos password root
   
-  	` sudo passwd root`
+		sudo passwd root
 
 5. Instalamos Apache, PHP, MySQL y cURL
 
