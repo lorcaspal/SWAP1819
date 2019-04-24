@@ -10,6 +10,6 @@ En esta práctica configuraremos una red entre varias máquinas de forma que ten
 
 2. Modificamos el fichero de configuración /etc/nginx/conf.d/default.conf para que sean nuestras máquinas las que se usen para realizar el reparto del tráfico:
 
-![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica3/images/Captura1.PNG)
+    ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica3/images/Captura1.PNG)
 
 
