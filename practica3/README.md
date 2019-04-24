@@ -5,11 +5,24 @@ En esta práctica configuraremos una red entre varias máquinas de forma que ten
 
 1. Clonamos una de las máquinas ya creadas, la cual usaremos como balanceador. Una vez creada instalamos "ngnix".
 
+        sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get
+autoremove
         sudo apt-get install nginx
         sudo systemctl start nginx
 
 2. Modificamos el fichero de configuración /etc/nginx/conf.d/default.conf para que sean nuestras máquinas las que se usen para realizar el reparto del tráfico:
 
     ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica3/images/Captura1.PNG)
+
+3. Una vez que lo tenemos configurado, podemos lanzar el servicio nginx como sigue:
+
+        sudo systemctl start nginx
+
+4. Si no obtenemos ningún mensaje de error, todo está funcionando correctamente y ya podemos probar la configuración haciendo peticiones a la IP de esta máquina balanceador: 
+
+        curl http://172.16.168.132
+
+    ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica3/images/Captura2.PNG)
+    ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica3/images/Captura3.PNG)
 
 
