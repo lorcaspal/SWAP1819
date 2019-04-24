@@ -36,4 +36,8 @@ En esta práctica configuraremos una red entre varias máquinas de forma que ten
 
 <H2>Balanceo de carga con HAPROXY</H2>
 
-1. 
+1. Instalamos "haproxy"
+
+       sudo apt-get install haproxy
+
+ 
