@@ -69,11 +69,6 @@ En esta práctica configuraremos una red entre varias máquinas de forma que ten
     ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica3/images/Captura3.PNG)
 
 
-    Como podemos ver en las imágenes el balanceador realiza su trabajo correctamente. En el caso de que al lanzarlo hubiesemos tenido un error significa que no está funcionando el balanceador, por lo que hay que eliminar una línea que configura nginx como servidor web en el archivo /etc/nginx/nginx.conf 
-
-    ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica3/images/Captura4.PNG)
-
-
 <H2>Someter a una alta carga el servidor balanceado</H2>
 Vamos a usar la herramienta Apache Benchmark para comprobar el rendimiento de nuestra granja web recién configurada. Es conveniente ejecutar los benchmark en otra máquina diferente a las que forman parte de la granja web (servidores web o balanceador), de forma que ambos procesos no consuman recursos de la misma máquina, ya que veríamos un menor rendimiento.
 
