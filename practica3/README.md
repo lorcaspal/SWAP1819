@@ -40,4 +40,37 @@ En esta práctica configuraremos una red entre varias máquinas de forma que ten
 
        sudo apt-get install haproxy
 
- 
+2. Una vez instalado, debemos modificar el archivo /etc/haproxy/haproxy.cfg ya que la configuración que trae por defecto no nos vale. Para ello debemos saber las IP de las máquinas servidoras y de la balaceadora, las cuales son: 
+
+    - Máquina1: 192.168.1.100
+    - Máquina2: 192.168.1.101
+    - Balanceador: 192.168.1.102
+
+    Ahora modificamos el archivo indicado antes
+
+    ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica3/images/Captura7.PNG)
+
+3. Una vez salvada la configuración en el fichero, lanzamos el servicio haproxy mediante el comando:
+
+        sudo /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg
+
+    
+
+4. Si no nos sale ningún error o aviso, todo ha ido bien, y ya podemos comenzar a hacer peticiones a la IP del balanceador, por ejemplo, con el comando cURL:
+
+        curl http://172.16.168.132
+
+    ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica3/images/Captura2.PNG)
+
+    Y lo realizamos de nuevo:
+
+        curl http://172.16.168.132
+
+    ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica3/images/Captura3.PNG)
+
+
+    Como podemos ver en las imágenes el balanceador realiza su trabajo correctamente. En el caso de que al lanzarlo hubiesemos tenido un error significa que no está funcionando el balanceador, por lo que hay que eliminar una línea que configura nginx como servidor web en el archivo /etc/nginx/nginx.conf 
+
+    ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica3/images/Captura4.PNG)
+
+
