@@ -36,7 +36,9 @@ Tiene una estructura basada en módulos; seguridad, almacenamiento en caché, re
 Como ventajas podemos destacar que Apache es gratuito y de código abierto, estable, flexible y con frecuencia de actualizaciones. Sin embargo, presenta problemas de rendimiento bajo tráfico alto y puede generar vulnerabilidades de seguridad.
 
 <H3>Nginx</H3>
-Nginx es un servidor web ligero de alto rendimiento y código abierto, diseñado para ofrecer un bajo uso de memoria y alta concurrencia. Este servidor consume muchos menos recursos al servir contenido estático, lo que lo hace una excelente opción para funcionar como proxy inverso o balanceador de carga como hemos visto en clase. Una de la características a destacar es su arquitectura, que permite responder a millones de peticiones por segundo, gracias a que aprovecha el máximo de sus recursos.
+Nginx es un servidor web ligero de alto rendimiento y código abierto, diseñado para ofrecer un bajo uso de memoria y alta concurrencia. Este servidor consume muchos menos recursos al servir contenido estático, lo que lo hace una excelente opción para funcionar como proxy inverso o balanceador de carga como hemos visto en clase. 
+
+Una de la características a destacar es su arquitectura, que permite responder a millones de peticiones por segundo, gracias a que aprovecha el máximo de sus recursos.
 
 
 
