@@ -24,10 +24,21 @@ De forma más simplificada, imaginemos que queremos hacer una tarta. El servidor
 
 Es lo que se conoce como el modelo cliente-servidor: el cliente pide y el servidor le abastece de los recursos que necesita.
 
-Los servidores web que vamos a tratar son, unos más conocidos como; Apache, Nginx, Google Web Server y IIS de Miccrosoft y en menor medida, otros menos usados como; Cherokee, Lite Speed ,Caddy, GWS, NodeJS, Sun Java System Web.
+Los servidores web que vamos a tratar son, unos más conocidos como; Apache, Nginx, Google Web Server y IIS de Microsoft y en menor medida, otros menos usados como; Cherokee, Lite Speed ,Caddy, GWS, NodeJS, Sun Java System Web.
 <H2 id="id2">Características y Benchmark</H2>
-    <H3>Apache</H3>
-        jfaojfoafo
+<H3>Apache</H3>
+jfaojfoafo
+
+<H3>Nginx</H3>
+jaodjfaodfjao
+
+<H3>Microsoft IIS</H3>
+jajajajajaj
+
+<H3>Google Web Server</H3>
+Pachiiiiiiiiiiiiiiiiiiiiiiiiinkoooooooooooooooooooooo!!!
+
+
 
 <H2 id="id3">Ejemplos comparativos</H2>
 <H2 id="id4">Conclusiones</H2>
