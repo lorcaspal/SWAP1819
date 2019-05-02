@@ -5,7 +5,7 @@
 
 <H2>Índice</H2>
 
-1.<a href="#id1" style="color:white"> Introducción </a>
+1.<a href="#id1" style="color:black"> Introducción </a>
 
 2.<a href="#id2" style="color:white"> Características y Benchmark </a>
 
@@ -18,7 +18,8 @@
 
 
 <H2 id="id1">Introducción</H2>
-jajajaja
+
+Apache, Nginx, Google Web Server, Lite Speebd, IIS de Miccrosoft, Cherokee, Caddy, GWS, NodeJS, Sun Java System Web.
 <H2 id="id2">Características y Benchmark</H2>
 <H2 id="id3">Ejemplos comparativos</H2>
 <H2 id="id4">Conclusiones</H2>
