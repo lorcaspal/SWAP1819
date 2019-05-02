@@ -27,14 +27,18 @@ Es lo que se conoce como el modelo cliente-servidor: el cliente pide y el servid
 Los servidores web que vamos a tratar son, unos más conocidos como; Apache, Nginx, Google Web Server y IIS de Microsoft y en menor medida, otros menos usados como; Cherokee, Lite Speed ,Caddy, GWS, NodeJS, Sun Java System Web.
 <H2 id="id2">Características y Benchmark</H2>
 <H3>Apache</H3>
-Apache es el servidor web HTTP más usado, cuyo código inicial está basado en el popular NCSA HTTPd (1995), aunque más tarde se reescribió desde 0. (Dato histórico?).
+Apache es el servidor web HTTP más usado, cuyo código inicial está basado en el popular NCSA HTTPd (1995), aunque más tarde se reescribió desde 0.
+
+Su nombre se debe a que alguien quería que tuviese la connotación de algo que es firme y enérgico pero no agresivo, y la tribu Apache fue la última en rendirse al que pronto se convertiría en gobierno de Estados Unidos.
 
 Tiene una estructura basada en módulos; seguridad, almacenamiento en caché, reescritura de URL, autenticación de contraseña, etc.
 
 Como ventajas podemos destacar que Apache es gratuito y de código abierto, estable, flexible y con frecuencia de actualizaciones. Sin embargo, presenta problemas de rendimiento bajo tráfico alto y puede generar vulnerabilidades de seguridad.
 
 <H3>Nginx</H3>
-jaodjfaodfjao
+Nginx es un servidor web ligero de alto rendimiento y código abierto, diseñado para ofrecer un bajo uso de memoria y alta concurrencia. Este servidor consume muchos menos recursos al servir contenido estático, lo que lo hace una excelente opción para funcionar como proxy inverso o balanceador de carga como hemos visto en clase. Una de la características a destacar es su arquitectura, que permite responder a millones de peticiones por segundo, gracias a que aprovecha el máximo de sus recursos.
+
+
 
 <H3>Microsoft IIS</H3>
 jajajajajaj
