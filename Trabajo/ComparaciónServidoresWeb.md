@@ -26,6 +26,9 @@ Es lo que se conoce como el modelo cliente-servidor: el cliente pide y el servid
 
 Los servidores web que vamos a tratar son, unos más conocidos como; Apache, Nginx, Google Web Server y IIS de Miccrosoft y en menor medida, otros menos usados como; Cherokee, Lite Speed ,Caddy, GWS, NodeJS, Sun Java System Web.
 <H2 id="id2">Características y Benchmark</H2>
+    <H3>Apache</H3>
+        jfaojfoafo
+
 <H2 id="id3">Ejemplos comparativos</H2>
 <H2 id="id4">Conclusiones</H2>
 <H2 id="id5">Bibliografía</H2>
