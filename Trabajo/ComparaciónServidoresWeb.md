@@ -48,7 +48,9 @@ Una de la características a destacar es su arquitectura, que permite responder 
 Internet Information Services (IIS) es un servidor web y un conjunto de seervicios para el sistema operativo Microsoft Windows. Es epecialmente usado en servidores web y actualmente es el segundo sistema de servidor web más popular ( funciona en el 35% de los servidores de todos los sitios web). Los servicios que ofrece son: FTP, SMTP, NNTP y HTTP/HTTPS.
 
 Entre sus características destaca la rica dotación de instrumentos satélite al servidor WEB, así como características de arquitectura completamente renovadas respecto a las versiones anteriores.
-Una de las características más importantes es la presencia del protocolo HTTP 1.1 que ofrece notables mejoras de las prestaciones, así como la disminución de los tiempos dee respuesta en la transmisión.
+
+Una de las características más importantes es la presencia del protocolo HTTP 1.1 que ofrece notables mejoras de las prestaciones, así como la disminución de los tiempos de respuesta en la transmisión.
+
 Por contrapartida nos encontramos que actualmente IIS está disponible sólo para el uso en la plataforma Windows NT, cosa que otros servidores, como por ejemplo Apache, pueden correr en la mayoría de plataformas.
 
 <H3>Google Web Server</H3>
