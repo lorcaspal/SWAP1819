@@ -5,7 +5,7 @@
 
 <H2>Índice</H2>
 
-1.<a href="#id1" style="color:white"> Introducción </a>
+1.<a href="#id1" style="color:white"> ¿Qué es un servidor? </a>
 
 2.<a href="#id2" style="color:white"> Características y Benchmark </a>
 
@@ -17,7 +17,7 @@
 
 
 
-<H2 id="id1">Introducción: ¿Qué es un servidor?</H2>
+<H2 id="id1">¿Qué es un servidor?</H2>
 Un servidor web es un programa informático que procesa una aplicación del lado del servidor, realizando así conexiones con el cliente ya sean unidireccionales o bidireccionales y síncronas o asíncronas. 
 
 De forma más simplificada, imaginemos que queremos hacer una tarta. El servidor es como una despensa. Tenemos que acudir a él para obtener el bizcocho, el chocolate y la nata, que podrían ser los mensajes de correo, la web y los archivos en la nube.
@@ -44,7 +44,7 @@ Una de la características a destacar es su arquitectura, que permite responder 
 
 
 <H3>Microsoft IIS</H3>
-jajajajajaj
+
 
 <H3>Google Web Server</H3>
 Pachiiiiiiiiiiiiiiiiiiiiiiiiinkoooooooooooooooooooooo!!!
