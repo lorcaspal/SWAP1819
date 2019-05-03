@@ -90,6 +90,12 @@ Como podemos observar en la gráfica el servidor web más usado a lo largo del t
 
 ![img](https://github.com/lorcaspal/SWAP1819/blob/master/Trabajo/images/Grafica2.PNG)
 
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/Trabajo/images/Grafica3.PNG)
+
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/Trabajo/images/Grafica4.PNG)
+
+Los benchmark se han hecho con 30000000 de peticiones al index.html
+
 
 <H2 id="id4">Conclusiones</H2>
 <H2 id="id5">Bibliografía</H2>
