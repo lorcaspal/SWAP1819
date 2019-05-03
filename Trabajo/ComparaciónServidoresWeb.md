@@ -24,7 +24,7 @@ De forma más simplificada, imaginemos que queremos hacer una tarta. El servidor
 
 Es lo que se conoce como el modelo cliente-servidor: el cliente pide y el servidor le abastece de los recursos que necesita.
 
-Los servidores web que vamos a tratar son, unos más conocidos como; Apache, Nginx, Google Web Server y IIS de Microsoft y en menor medida, otros menos usados como; Cherokee, Lite Speed ,Caddy, NodeJS, Sun Java System Web.
+Los servidores web que vamos a tratar son, unos más conocidos como; Apache, Nginx, Google Web Server y IIS de Microsoft y en menor medida, otros menos usados como; Cherokee, Lite Speed, NodeJS, Lighttpd y Sun Java Sysem Application Server.
 
 <H2 id="id2">Características de los servidores</H2>
 <H3>Apache</H3>
@@ -69,8 +69,15 @@ Aprovechando el motor V8 permite a Node proporciona un entorno de ejecución del
 Cherokee es un servidor web multiplataforma. Es muy rápido y completamente funcional, sin dejar de ser liviano comparado con otros servidores web. Acepta más peticiones por segundo (hasta 6 veces más rápido que Apache) pero sin embargo, es menos versátil. 
 
 <H3>Lite Speed</H3>
- Lite Speed es un servidor web de pago el cual al ser así no lo usa ni el Tato.
-     
+Lite Speed es un servidor web que basa su arquitectura entorno al uso de procesos, y no eventos porque con eso usa muchos menos procesos, ahorra recursos, logra un alto rendimiento y velocidad de despacho de la web. 
+
+El principal inconveniente de Lite Speed es que es de pago.
+
+<H3>Lighttpd</H3>
+Lighttpd es un servidor web diseñado para ser rápido, seguro, flexible y optimizado para ambientes de alto rendimiento. Se ocupa de balancear la CPU y además gracias a ciertas características avanzadas (FastCGI, Auth) hace que Lighttpd sea perfecto para aquellos servidores con problemas de balanceo.
+
+<H3>Sun Java Sysem Application Server</H3>
+Java también tiene su propio servidor web llamado Sun Java Sysem Application Server o SJSAS, está basado en Java EE y tiene soprote integrado para interfaces de desarrollo como Sun Java Studio Enterprise/Creator y NetBeans. Desde la versión 9 se desarrolla bajo el nombre de GlassFish.
 
 <H2 id="id3">Ejemplos comparativos</H2>
 <H2 id="id4">Conclusiones</H2>
