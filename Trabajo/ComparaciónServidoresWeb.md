@@ -130,16 +130,27 @@ Para terminar comentaremos sobre lighttpd que es un servidor ligero, que usa poc
 <H2 id="id5">Bibliografía</H2>
 
 https://news.netcraft.com/archives/2019/04/22/april-2019-web-server-survey.html
+
 https://blog.infranetworking.com/tipos-de-servidores-web/#Cual_es_el_mejor_servidor_web
+
 https://www.rootusers.com/linux-web-server-performance-benchmark-2016-results/
+
 http://cherokee-project.com/doc/
+
 https://desarrolloweb.com/de_interes/cherokee-web-server-rapido-servidores-web-2273.html
+
 https://wiki.archlinux.org/index.php/Lighttpd_(Espa%C3%B1ol)
+
 https://raiolanetworks.es/blog/litespeed-cache-lscache/
+
 https://blog.infranetworking.com/apache-vs-nginx-vs-litespeed/
+
 https://wiwiloz.wordpress.com/iis-internet-information-server/
+
 https://www.axarnet.es/blog/comparativa-de-los-servidores-web-mas-utilizados/
+
 https://www.escueladeinternet.com/tipos-servidores-alojar-web/
+
 
 es.wikipedia.org/wiki/*
 
