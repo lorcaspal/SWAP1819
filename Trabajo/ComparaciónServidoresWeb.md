@@ -7,7 +7,7 @@
 
 1.<a href="#id1" style="color:white"> ¿Qué es un servidor? </a>
 
-2.<a href="#id2" style="color:white"> Características y Benchmark </a>
+2.<a href="#id2" style="color:white"> Características de los servidores </a>
 
 3.<a href="#id3" style="color:white"> Ejemplos comparativos </a>
 
@@ -25,7 +25,8 @@ De forma más simplificada, imaginemos que queremos hacer una tarta. El servidor
 Es lo que se conoce como el modelo cliente-servidor: el cliente pide y el servidor le abastece de los recursos que necesita.
 
 Los servidores web que vamos a tratar son, unos más conocidos como; Apache, Nginx, Google Web Server y IIS de Microsoft y en menor medida, otros menos usados como; Cherokee, Lite Speed ,Caddy, GWS, NodeJS, Sun Java System Web.
-<H2 id="id2">Características y Benchmark</H2>
+
+<H2 id="id2">Características de los servidores</H2>
 <H3>Apache</H3>
 Apache es el servidor web HTTP más usado, cuyo código inicial está basado en el popular NCSA HTTPd (1995), aunque más tarde se reescribió desde 0.
 
