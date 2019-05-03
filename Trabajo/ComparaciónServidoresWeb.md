@@ -118,6 +118,96 @@ Sobre el tiempo total transcurrido vuelve a existir una diferencia notable entre
 
 <H2 id="id4">Conclusiones</H2>
 
+Como conclusiones finales vamos a hablar un poco sobre la usabilidad a día de hoy de algunos de los servidores web vistos.
+
+Empecemos con Apache, como se ha indicado en el punto anterior, Apache presenta diversos problemas de rendimiento, memoria, etc. Visto esto parece que no es una buena opción en ningun caso, pero presenta una fuerte ventaja que es su estabilidad, haciendolo ideal para servidores cuyo objetivo principal es tener un sistema robusto. Ejemplos de uso pueden ser: Adobe, Paypal y Apple.
+
+Seguiremos con el servidor web que "le pisa la cola" a Apache, este es Nginx cuya principal ventaja es que consume pocos recursos al servir contenido estático, esto lo convierte en un excelente proxy inverso para contenido web o para protocolos de correo electrónico o como balanceador de carga para servidores como Apache. Ejemplos que hacen uso de Nginx son: Netflix, Dropbox, WordPress (este último pasó de Apache a Nginx).
+
+
+
 
 
 <H2 id="id5">Bibliografía</H2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
