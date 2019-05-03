@@ -88,13 +88,25 @@ Como podemos observar en la gráfica el servidor web más usado a lo largo del t
 
 <H3>Resultados Benchmark</H3>
 
+Los benchmark siguientes se han hecho con 30 millones de peticiones al index.html
+
 ![img](https://github.com/lorcaspal/SWAP1819/blob/master/Trabajo/images/Grafica2.PNG)
+
+En esta gráfica vamos a destacar en un principio que hemos escogido una CPU de 4 cores por su frecuencia. 
+
+Se puede apreciar que los servidores con más respuestas por conexiones concurrentes son las dos versiones de Nginx, seguido de LiteSpeed, Lighttpd y Cherokee.
+
+Por el contrario, Apache tiene unas prestaciones bastante pobres con respecto a todos los demás servidores.
 
 ![img](https://github.com/lorcaspal/SWAP1819/blob/master/Trabajo/images/Grafica3.PNG)
 
+Con respuesto a la memoria usada, en esta gráfica podemos observar que de los servidores comentados anteriormente todos tienen un uso aproximado de memoria entre ellos, mientras que Apache consume demasiada memoria en comparación con los mencionados.
+
 ![img](https://github.com/lorcaspal/SWAP1819/blob/master/Trabajo/images/Grafica4.PNG)
 
-Los benchmark se han hecho con 30000000 de peticiones al index.html
+Sobre el tiempo total transcurrido vuelve a existir una diferencia notable entre todos los servidores y Apache. Aunque con 8 cores en un tiempo bastante aproximado a los demás.
+
+
 
 
 <H2 id="id4">Conclusiones</H2>
