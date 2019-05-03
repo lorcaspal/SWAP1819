@@ -62,8 +62,11 @@ Al ser Google el propietario existe poca información sobre GWS, lo que dificult
 <H3>Lite Speed</H3>
 <H3>Cady</H3>
 <H3>NodeJS</H3>
+NodeJS es un entorno en tiempo de jecución multiplataforma, de código abierto de JavaScript (razón por la cual se incluye el distintivo JS) que está diseñado para generar aplicaciones web de forma altamente optimizada. Fue creado con el enforque de ser útil en la creación de ser útil en la creación de programas de red altamente escalables. 
 
-![img](https://github.com/lorcaspal/SWAP1819/blob/master/Trabajo/images/NodeJS.PNG)      
+Aprovechando el motor V8 permite a Node proporciona un entorno de ejecución del lado del servidor que compila y ejecuta javascript a velocidades increíbles. Con esto estamos indicando a su vez que NodeJS no se ejecuta en un navegador, sino en el servidor. Un ejemplo de código sería:
+
+  ![img](https://github.com/lorcaspal/SWAP1819/blob/master/Trabajo/images/NodeJS.PNG)      
 
 <H2 id="id3">Ejemplos comparativos</H2>
 <H2 id="id4">Conclusiones</H2>
