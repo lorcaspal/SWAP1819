@@ -82,6 +82,12 @@ Java también tiene su propio servidor web llamado Sun Java Sysem Application Se
 
 ![img](https://github.com/lorcaspal/SWAP1819/blob/master/Trabajo/images/Grafica1.PNG)
 
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/Trabajo/images/Tabla1.PNG)
+
+Como podemos observar en la gráfica el servidor web más usado a lo largo del tiempo ha sido Apache. Desde los últimos años ha habido un balanceo positivo con respecto a los otros servidores web, los cuales se han ido usando cada vez más, mientras que Apache ha caído. Podemos destacar Nginx, Microsoft y otros servidores menores. Por esta razón, todos los nuevos servidores han sentado su tenido como objetivo "machacar" a Apache.
+
+<H3>Uso de los servidores Web a lo largo del tiempo</H3>
+
 
 <H2 id="id4">Conclusiones</H2>
 <H2 id="id5">Bibliografía</H2>
