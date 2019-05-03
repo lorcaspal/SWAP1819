@@ -45,14 +45,18 @@ Una de la características a destacar es su arquitectura, que permite responder 
 
 
 <H3>Microsoft IIS</H3>
-Internet Information Services (IIS) es un servidor web y un conjunto de seervicios para el sistema operativo Microsoft Windows. Es epecialmente usado en servidores web y actualmente es el segundo sistema de servidor web más popular ( funciona en el 35% de los servidores de todos los sitios web). Los servicios que ofrece son: FTP, SMTP, NNTP y HTTP/HTTPS.
+Internet Information Services (IIS) es un servidor web y un conjunto de servicios para el sistema operativo Microsoft Windows, el cual al ser desarrollado por Windows, no es de código abierto. Es epecialmente usado en servidores web y actualmente es el segundo sistema de servidor web más popular ( funciona en el 35% de los servidores de todos los sitios web). Los servicios que ofrece son: FTP, SMTP, NNTP y HTTP/HTTPS. 
 
 Una de las características más importantes es la presencia del protocolo HTTP 1.1 que ofrece notables mejoras de las prestaciones, así como la disminución de los tiempos de respuesta en la transmisión.
 
-Por contrapartida nos encontramos que actualmente IIS está disponible sólo para el uso en la plataforma Windows NT, cosa que otros servidores, como por ejemplo Apache, pueden correr en la mayoría de plataformas.
+Por contrapartida nos encontramos con que actualmente IIS está disponible sólo para el uso en la plataforma Windows NT, cosa que otros servidores, como por ejemplo Apache, pueden correr en la mayoría de plataformas.
 
 <H3>Google Web Server</H3>
+Google Web Server, también conocido como GWS, es el servidor web que Google utiliza en sus infraestructuras y que alberga aproximadamente un 10 % de todas las páginas web activas del mundo. Es el cuarto servidor web más popular por detras de Apache, Nginx y Microsoft IIS.
 
+Las solicitudes de página web en la mayoría de las páginas de Google proporcionan "gws" (sin un número de versión) en el encabezado HTTP como una indicación del software del servidor web que se está utilizando.
+
+Al ser Google el propietario existe poca información sobre GWS, lo que dificulta saber más sobre su infraestructura, arquitectura, etc.
 
 
 
