@@ -90,6 +90,9 @@ Como podemos observar en la gráfica el servidor web más usado a lo largo del t
 
 ![img](https://github.com/lorcaspal/SWAP1819/blob/master/Trabajo/images/Grafica5.PNG)
 
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/Trabajo/images/Tabla2.PNG)
+
+
 En cuanto al uso de los diferentes servidores web que se usan en los ordenadores, vemos en la gráfica que a pesar de que Apache ha sido el más utilizado durante muchísimo tiempo, cuando nos vamos acercando a los años actuales Nginx tiene una importante subida a la par que Apache baja.
 
 <H3>Resultados Benchmark</H3>
