@@ -86,6 +86,12 @@ Java también tiene su propio servidor web llamado Sun Java Sysem Application Se
 
 Como podemos observar en la gráfica el servidor web más usado a lo largo del tiempo ha sido Apache. Desde los últimos años ha habido un balanceo positivo con respecto a los otros servidores web, los cuales se han ido usando cada vez más, mientras que Apache ha caído. Podemos destacar Nginx, Microsoft y otros servidores menores. Por esta razón, todos los nuevos servidores han sentado su tenido como objetivo "machacar" a Apache.
 
+<H3>Uso de servidores web en ordenadores</H3>
+
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/Trabajo/images/Grafica5.PNG)
+
+En cuanto al uso de los diferentes servidores web que se usan en los ordenadores, vemos en la gráfica que a pesar de que Apache ha sido el más utilizado durante muchísimo tiempo, cuando nos vamos acercando a los años actuales Nginx tiene una importante subida a la par que Apache baja.
+
 <H3>Resultados Benchmark</H3>
 
 Los benchmark siguientes se han hecho con 30 millones de peticiones al index.html
@@ -105,8 +111,6 @@ Con respuesto a la memoria usada, en esta gráfica podemos observar que de los s
 ![img](https://github.com/lorcaspal/SWAP1819/blob/master/Trabajo/images/Grafica4.PNG)
 
 Sobre el tiempo total transcurrido vuelve a existir una diferencia notable entre todos los servidores y Apache. Aunque con 8 cores en un tiempo bastante aproximado a los demás.
-
-
 
 
 <H2 id="id4">Conclusiones</H2>
