@@ -9,7 +9,7 @@
 
 2.<a href="#id2" style="color:white"> Características de los servidores </a>
 
-3.<a href="#id3" style="color:white"> Ejemplos comparativos </a>
+3.<a href="#id3" style="color:white"> Ejemplos comparativos y Benchmark </a>
 
 4.<a href="#id4" style="color:white"> Conclusiones </a>
 
@@ -77,7 +77,7 @@ Lighttpd es un servidor web diseñado para ser rápido, seguro, flexible y optim
 <H3>Sun Java Sysem Application Server</H3>
 Java también tiene su propio servidor web llamado Sun Java Sysem Application Server o SJSAS, está basado en Java EE y tiene soprote integrado para interfaces de desarrollo como Sun Java Studio Enterprise/Creator y NetBeans. Desde la versión 9 se desarrolla bajo el nombre de GlassFish.
 
-<H2 id="id3">Ejemplos comparativos</H2>
+<H2 id="id3">Ejemplos comparativos y Benchmark</H2>
 <H3>Uso de los servidores Web a lo largo del tiempo</H3>
 
 ![img](https://github.com/lorcaspal/SWAP1819/blob/master/Trabajo/images/Grafica1.PNG)
@@ -86,7 +86,9 @@ Java también tiene su propio servidor web llamado Sun Java Sysem Application Se
 
 Como podemos observar en la gráfica el servidor web más usado a lo largo del tiempo ha sido Apache. Desde los últimos años ha habido un balanceo positivo con respecto a los otros servidores web, los cuales se han ido usando cada vez más, mientras que Apache ha caído. Podemos destacar Nginx, Microsoft y otros servidores menores. Por esta razón, todos los nuevos servidores han sentado su tenido como objetivo "machacar" a Apache.
 
-<H3>Uso de los servidores Web a lo largo del tiempo</H3>
+<H3>Resultados Benchmark</H3>
+
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/Trabajo/images/Grafica2.PNG)
 
 
 <H2 id="id4">Conclusiones</H2>
