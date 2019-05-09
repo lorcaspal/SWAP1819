@@ -23,6 +23,23 @@ conseguir un certificado que podremos conseguir de las siguientes formas:
 - Utilizar certificados del proyecto Certbot (antes Let’s Encrypt).
 
 <H3>Generar e instalar un certificado autofirmado</H3>
+Para generar un certificado SSL autofirmado en Ubuntu Server solo debemos activar
+el módulo SSL de Apache, generar los certificados y especificarle la ruta a los
+certificados en la configuración. Así pues, como root ejecutaremos:
 
+        a2enmod ssl
+        service apache2 restart
+        mkdir /etc/apache2/ssl
+        openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout 
+        /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt
 
-![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica3/images/Captura6.PNG)
+Nos pedirá una serie de datos para configurar el dominio.
+
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica4/images/Captura1.PNG)
+
+Editamos el archivo de configuración del sitio default-ssl:
+
+        nano /etc/apache2/sites-available/default-ssl
+
+Y agregamos las lineas que se ven a continuación marcadas en amarillo.
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica4/images/Captura2.PNG)
