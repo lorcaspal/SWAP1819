@@ -88,6 +88,6 @@ Para configurar adecuadamente iptables en una máquina Linux, conviene establece
 
 Si queremos comprobar el estado del cortafuegos, debemos ejecutar:
 
-        iptables –L –n -v
+    iptables –L –n -v
 
 <H3>Uso de la aplicación iptables</H3>
