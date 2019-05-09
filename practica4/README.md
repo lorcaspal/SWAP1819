@@ -57,7 +57,7 @@ Ya podemos hacer peticiones por HTTPS con curl:
 
 Por último, y como queremos que la granja nos permita usar el HTTPS, debemos configurar el balanceador para que también acepte este tráfico (puerto 443). Para hacer esto, copiaremos la pareja de archivos (el .crt y el .key) a todas las máquinas de la granja web. No debemos generar más certificados, sino que los archivos apache.crt y apache.key que generamos en el primer servidor en el paso anterior vamos a copiarlos al otro servidor y al balanceador. Para copiarlos podemos usar scp o rsync.
 
-rsync -avz -e ssh maquina1@192.168.1.100:/etc/apache2/ssl/* /etc/apache2/ssl/
+        rsync -avz -e ssh maquina1@192.168.1.100:/etc/apache2/ssl/* /etc/apache2/ssl/
 
 En el segundo servidor debemos activar el sitio default-ssl y reiniciar apache (como hicimos en el primer servidor). En el balanceador pondremos la ruta a la carpeta donde hayamos copiado el apache.crt y el apache.key. Después, en el balanceador nginx debemos añadir lo siguiente al archivo /etc/nginx/conf.d/default.conf y reiniciarlo:
 
