@@ -91,3 +91,128 @@ Si queremos comprobar el estado del cortafuegos, debemos ejecutar:
         iptables –L –n -v
 
 <H3>Uso de la aplicación iptables</H3>
+A continuación mostraremos cómo utilizar la herramienta para establecer ciertas reglas y filtrar algunos tipos de tráfico, o bien controlar el acceso a ciertas páginas:
+
+Para lanzar, reiniciar o parar el cortafuegos, y para salvar las reglas establecidas hasta ese momento, ejecutaremos respectivamente:
+
+        service iptables start
+        service iptables restart
+        service iptables stop
+        service iptables save
+
+También se puede parar el cortafuegos y eliminar al mismo tiempo todas sus reglas:
+
+        iptables -F
+        iptables -X
+        iptables –t nat -F
+        iptables –t nat -X
+        iptables –t mangle -F
+        iptables –t mangle -X
+        iptables -P INPUT ACCEPT
+        iptables -P OUTPUT ACCEPT
+
+Para denegar cualquier tráfico de información, podemos hacer:
+
+        iptables -P INPUT DROP
+        iptables -P OUTPUT DROP
+        iptables -P FORWARD DROP
+        iptables –L –n -v
+
+Para bloquear el tráfico de entrada, podemos hacer:
+
+        iptables -P INPUT DROP
+        iptables -P FORWARD DROP
+        iptables -P OUTPUT ACCEPT
+        iptables -A INPUT -m state --state NEW,ESTABLISHED -j ACCEPT
+        iptables –L –n -v
+
+Bloquear todo el tráfico ICMP (ping), para evitar ataques como el del ping de la muerte:
+
+        iptables -A INPUT -p icmp --icmp-type echo-request -j DROP
+
+Abrir el puerto 22 para permitir el acceso por SSH:
+
+        iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+        iptables -A OUTPUT -p udp --sport 22 -j ACCEPT
+
+Para abrir el puerto 53 para permitir el acceso a DNS:
+
+        iptables -A INPUT -m state --state NEW -p udp --dport 53 -j ACCEPT
+        iptables -A INPUT -m state --state NEW -p tcp --dport 53 -j ACCEPT
+
+Bloquear todo el tráfico de entrada desde una IP:
+
+        iptables -I INPUT -s IPbloqueada -j DROP
+
+Bloquear todo el tráfico de salida hacia una IP:
+
+        iptables -I OUTPUT -s IPbloqueada -j DROP
+
+Lo habitual es crear un script con las reglas para que se ejecute al arrancar el sistema:
+
+(1) Eliminar todas las reglas (configuración limpia)
+
+        iptables -F           -->vaciado de todas las reglas
+        iptables -X           -->borrado de todas las cadenas de reglas
+        iptables -Z           -->puesta a cero de todos los contadores de paquetes y bytes
+        iptables -t nat -F    -->vaciado de las reglas de la tabla NAT
+(2) Política por defecto: denegar todo el tráfico
+
+        iptables -P INPUT DROP
+        iptables -P OUTPUT DROP
+        iptables -P FORWARD DROP
+(3) Permitir cualquier acceso desde localhost (interface lo)
+
+        iptables -A INPUT -i lo -j ACCEPT
+        iptables -A OUTPUT -o lo -j ACCEPT
+(4) Abrir el puerto 22 para permitir el acceso por SSH
+
+        iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+        iptables -A OUTPUT -p tcp --sport 22 -j ACCEPT
+(5) Abrir los puertos HTTP (80) de servidor web
+
+        iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+        iptables -A OUTPUT -p tcp --sport 80 -j ACCEPT
+(6) Abrir los puertos HTTPS (443) de servidor web
+
+        iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+        iptables -A OUTPUT -p tcp --sport 443 -j ACCEPT
+
+En cualquier momento, si hubiéramos cometido algún error, podemos poner la
+configuración que tenía la máquina inicialmente (permitir todo el tráfico):
+
+        **Eliminar todas las reglas (configuración limpia)**
+        iptables -F
+        iptables -X
+        iptables -Z
+        iptables -t nat -F
+        **política por defecto: aceptar todo**
+        iptables −P INPUT ACCEPT
+        iptables −P OUTPUT ACCEPT
+        iptables −P FORWARD ACCEPT
+        iptables -L -n -v
+
+Una vez hayamos configurado todo como hayamos creído oportuno podemos comprobar los puertos que hay abiertos con la orden:
+
+        netstat -tulpn
+
+Por ejemplo, si queremos saber si está abierto o cerrado el puerto 80 ejecutamos:
+
+       netstat -tulpn | grep :80 
+
+Nosotros para nuestra granja web, hemos creado en la máquina uno un script con la configuración básica para un servidor web:
+
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica4/images/Captura5.PNG)
+
+La salida de nuestro script sería:
+
+
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica4/images/Captura6.PNG)
+
+Si queremos ejecutar nuestro script al arrancar el sistema modificamos el archivo rc.local
+
+        sudo nano /etc/rc.local
+
+Añadimos la ruta a nuestro script al final del archivo (antes de exit 0) y guardamos.
+
+        sh /home/swap1/scriptCortaFuegos.sh &
