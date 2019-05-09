@@ -215,4 +215,4 @@ Si queremos ejecutar nuestro script al arrancar el sistema modificamos el archiv
 
 Añadimos la ruta a nuestro script al final del archivo (antes de exit 0) y guardamos.
 
-        sh /home/swap1/scriptCortaFuegos.sh &
+        sh /etc/init.d/scriptCortaFuegos.sh &
