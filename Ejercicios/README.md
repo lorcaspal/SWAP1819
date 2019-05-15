@@ -20,3 +20,52 @@ principio de la sesión:</b>
 
 
 <H2>Tema 2</H2>
+
+<b>1. Calcular la disponibilidad del sistema si tenemos dos
+réplicas de cada elemento (en total 3 elementos en cada
+subsistema).</b>
+
+Vamos a ponernos siempre en el peor caso para este cálculo, que comprendería el hecho de que los componentes fuesen fallando de forma sucesiva uno tras otro.
+
+Para estudiar este porcentaje con 1 única unidad de cada componente: 
+
+        As = Ac1 * Ac2 * Ac3 * ... * Acn
+
+La disponibilidad inicial equivale a:
+
+        As = 85% * 90% * 99'9% * 98% * 85% * 99% * 99'99% * 95% = 59'86%
+
+Ahora bien con componentes replicados, el valor de disponibilidad aproximada de éste sistema equivale a la siguiente ecuación:
+
+        As = Ac1 + ( (1 - Ac1) * Ac2 )
+
+Si replicamos el componente web la disponibilidad sería:
+
+        As = 85% + ( (1 - 85%) * 85% ) = 97'75%
+
+Con 3 elementos del subsistema: 
+
+        COMPONENTE Web --> 99'6625% 
+        App --> 99'9% 
+        Database --> 99'999999% 
+        DNS --> 99'9992% 
+        Firewall --> 99'6625% 
+        Switch --> 99'9999% 
+        Data Center --> 99'999999% 
+        ISP	--> 99'9875% 
+        TOTAL --> 99'2135%
+
+<b>2. Buscar frameworks y librerías para diferentes lenguajes que
+permitan hacer aplicaciones altamente disponibles con
+relativa facilidad. Como ejemplo, examina PM2 https://github.com/Unitech/pm2 que sirve para administrar clústeres de NodeJS.</b>
+
+MySQL Router para balancear bases de datos MySQL
+
+<b>3. ¿Cómo analizar el nivel de carga de cada uno de los
+subsistemas en el servidor?
+Buscar herramientas y aprender a usarlas.
+...¡o recordar cómo usarlas!</b>
+
+Ejecutando `top` en la terminal, nos muestra el uso de la memoria y procesador.
+
+El comando linux `df` nos informa acerca del espacio total, ocupado y libre en nuestro sistema.
