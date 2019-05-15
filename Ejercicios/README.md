@@ -78,7 +78,85 @@ Buscar productos comerciales para servidores de
 almacenamiento.</b>
 
 - Balanceador Software: Haproxy. 
-- Balanceador Hardware: Local Director (Cisco), BigIP (F5) Servidor de almacenamiento.
-- Balanceador de carga Barracuda Balanceador de aplicaciones: LoadMaster de KEMP
+- Balanceador Hardware: Local Director (Cisco), BigIP (F5) Servidor de almacenamiento: Balanceador de carga Barracuda.
+- Balanceador de aplicaciones: LoadMaster de KEMP.
 
 <H2>Tema 3</H2>
+
+<b>1. Buscar con qué órdenes de terminal o herramientas
+podemos configurar bajo Windows y bajo Linux el
+enrutamiento del tráfico de un servidor para pasar el
+tráfico desde una subred a otra.</b>
+
+Con el comando `route` podemos configurar tanto en Linux como en Windows el enrutamiento del tráfico de un servidor para pasar el tráfico dessde una subred a otra.
+
+<b>2. Buscar con qué órdenes de terminal o herramientas gráficas podemos configurar bajo Windows y bajo Linux el filtrado y bloqueo de paquetes.</b>
+
+- Windows: con el cortafuegos propio.
+- Linux: con la configuración de nuestro cortafuegos con iptables.
+
+<H2>Tema 4</H2>
+
+<b>5. Probar las diferentes maneras de redirección HTTP.
+¿Cuál es adecuada y cuál no lo es para hacer balanceo de
+carga global? ¿Por qué?.</b>
+
+301 y el 302: 301 – Moved Permanently: la página solicitada por el agente de usuario estará disponible de manera permanente bajo la URL redireccionada. La antigua URL será, por lo tanto, inválida. 
+
+302 – Moved Temporarily: la página solicitada por el agente de usuario está temporalmente disponible bajo la nueva URL. 
+
+A diferencia de la redirección 301, la antigua dirección sigue siendo válida.
+
+A diferencia de la redirección 301, el código de estado 302 le comunica al crawler que la URL original debe seguir siendo indexada.
+
+<H2>Tema 5</H2>
+
+<b>1. Buscar información sobre cómo calcular el número de
+conexiones por segundo.
+
+        netstat -an | grep :80 | sort
+        netstat | grep http | wc -l
+        
+Para empezar, podéis revisar las siguientes webs:
+http://bit.ly/1ye4yHz, http://bit.ly/1PkZbLJ, http://bit.ly/2nGm3MR</b>
+
+Utilizando Apache, más especificamente con el comando:
+
+        apache2ctl status | grep request
+
+<b>3. Buscar información sobre características, funcionalidad,
+disponibilidad para diversos SO, etc de herramientas para
+monitorizar las prestaciones de un servidor.
+Para empezar, podemos comenzar utilizando las clásicas de
+Linux: top, vmstat, netstat</b>
+
+- Netdata es una aplicación gratuita y de código abierto desarrollada para ofrecer a los usuarios un monitor en tiempo real del rendimiento de un sistema Linux, 
+- iStat Menus esta aplicación concentra toda la información (incluso aquella que no da Monitor de Actividad, como la temperatura que los sensores de cada componente proporciona) en varios menús que se colocan en la barra superior de OS X.
+
+<H2>Tema 6</H2>
+<b>1.a) Aplicar con iptables una política de denegar todo el tráfico
+en una de las máquinas de prácticas.
+Comprobar el funcionamiento.</b>
+
+        iptable -F
+        iptables -P INPUT DROP
+        iptables -P OUTPUT DROP
+        iptables -P FORWARD DROP
+
+<b>1.b) Aplicar con iptables una política de permitir todo el tráfico en una de las máquinas de prácticas.
+Comprobar el funcionamiento.</b>
+
+        iptables -F
+        iptables -I INPUT -j ACCEPT
+
+<b>3. Buscar información acerca de los tipos de ataques más
+comunes en servidores web (p.ej. secuestros de sesión).
+Detallar en qué consisten, y cómo se pueden evitar.</b>
+
+- Ataques de inyección: más específicamente sqli (Structured Query Language Injection) es una técnica para modificar una cadena de consulta de base de datos mediante la inyección de código en la consulta.
+
+- DDoS: La Denegación de Servicio consiste en congelar el funcionamiento de un sitio web. Estos son los intentos de inundar un sitio con solicitudes externas, por lo que ese sitio no podría estar disponible para los usuarios reales. Los ataques de denegación de servicio por lo general se dirigen a puertos específicos, rangos de IP o redes completas, pero se pueden dirigir a cualquier dispositivo o servicio conectado.
+
+- Fuerza Bruta: intenta “romper” todas las combinaciones posibles de nombre de usuario + contraseña en una página web. Los ataques de fuerza bruta buscan contraseñas débiles para ser descifradas y tener acceso de forma facil.  
+
+- Cross Site Scripting: inyectar scripts maliciosos en lo que serían sitios web inofensivos. Debido a que estos scripts parecen provenir de sitios web de confianza, el navegador de los usuarios finales casi siempre ejecuta la secuencia de comandos, la concesión de los piratas informáticos el acceso a la información contenida en las cookies o tokens de sesión utilizados con ese sitio. El XSS generalmente se utiliza para obtener acceso de un usuario de la cuenta.
