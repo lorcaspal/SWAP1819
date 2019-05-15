@@ -69,3 +69,16 @@ Buscar herramientas y aprender a usarlas.
 Ejecutando `top` en la terminal, nos muestra el uso de la memoria y procesador.
 
 El comando linux `df` nos informa acerca del espacio total, ocupado y libre en nuestro sistema.
+
+<b>4. Buscar ejemplos de balanceadores software y hardware
+(productos comerciales).
+Buscar productos comerciales para servidores de
+aplicaciones.
+Buscar productos comerciales para servidores de
+almacenamiento.</b>
+
+- Balanceador Software: Haproxy. 
+- Balanceador Hardware: Local Director (Cisco), BigIP (F5) Servidor de almacenamiento.
+- Balanceador de carga Barracuda Balanceador de aplicaciones: LoadMaster de KEMP
+
+<H2>Tema 3</H2>
