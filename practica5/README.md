@@ -136,4 +136,6 @@ Para comprobar que todo funciona, debemos ir al maestro e introducir nuevos dato
 
 ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura17.PNG)
 
+Como podemos observar todo funciona correctamente.
+
 
