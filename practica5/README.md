@@ -102,7 +102,38 @@ Para finalizar con la configuración en el maestro, obtenemos los datos de la BD
 
 ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura14.PNG)
 
+Volvemos a la máquina esclava, entramos en mysql y le damos los datos del maestro. En el entorno de mysql ejecutamos la siguiente sentencia:
 
+        mysql> CHANGE MASTER TO MASTER_HOST='192.168.1.100',
+        MASTER_USER='esclavo', MASTER_PASSWORD='esclavo',
+        MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=154,
+        MASTER_PORT=3306;
 
+Por último, arrancamos el esclavo y ya está todo listo para que los demonios de MySQL de las dos máquinas repliquen automáticamente los datos que se introduzcan/modifiquen/borren en el servidor maestro:
+
+        mysql> START SLAVE;
+
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura15.PNG)
+
+Ahora, podemos hacer pruebas en el maestro y deberían replicarse en el esclavo automáticamente.
+
+Por último, volvemos al maestro y volvemos a activar las tablas para que puedan meterse nuevos datos en el maestro:
+
+        mysql> UNLOCK TABLES;
+
+Ahora, si queremos asegurarnos de que todo funciona perfectamente y que el esclavo no tiene ningún problema para replicar la información, nos vamos al esclavo y con la
+siguiente orden:
+
+        mysql> SHOW SLAVE STATUS\G
+
+revisamos si el valor de la variable “Seconds_Behind_Master” es distinto de “null”. En ese caso, todo estará funcionando perfectamente. Si no es así, es que hay algún error y los valores de las demás variables indicarán cuál es el problema y cómo arreglarlo para que todo funcione bien.
+
+A continuación vemos que el valor de la variable “Seconds_Behind_Master” es 0, por lo que no hay ningún error y todo funciona como debe:
+
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura16.PNG)
+
+Para comprobar que todo funciona, debemos ir al maestro e introducir nuevos datos a la base de datos. A continuación vamos al esclavo para revisar si la modificación se ha reflejado en la tabla modificada en el maestro:
+
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura17.PNG)
 
 
