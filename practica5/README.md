@@ -76,3 +76,33 @@ Y vemos que se ha realizado:
 <H2>Replicación de BD mediante una configuración
 maestro-esclavo</H2>
 
+Lo primero que debemos hacer es la configuración de mysql del maestro. Para ello editamos, como root, el /etc/mysql/mysql.conf.d/mysqld.cnf para realizar las modificaciones que se muestran a continuación y reiniciamos el servicio:
+
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura12.PNG)
+
+Si no nos ha dado ningún error la configuración del maestro, podemos pasar a hacer la configuración del mysql del esclavo.
+
+La configuración es similar a la del maestro, con la diferencia de que el server-id en esta ocasión será 2 y reiniciamos el servicio en el esclavo:
+
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura13.PNG)
+
+
+Ahora ya podemos volver al maestro para crear un usuario y darle permisos de acceso para la replicación.
+
+Entramos en mysql y ejecutamos las siguientes sentencias:
+
+        mysql> CREATE USER esclavo IDENTIFIED BY 'esclavo';
+        mysql> GRANT REPLICATION SLAVE ON *.* TO 'esclavo'@'%'
+        IDENTIFIED BY 'esclavo';
+        mysql> FLUSH PRIVILEGES;
+        mysql> FLUSH TABLES;
+        mysql> FLUSH TABLES WITH READ LOCK;
+
+Para finalizar con la configuración en el maestro, obtenemos los datos de la BD que vamos a replicar para posteriormente usarlos en la configuración del esclavo:
+
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura14.PNG)
+
+
+
+
+
