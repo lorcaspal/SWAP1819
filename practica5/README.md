@@ -55,9 +55,12 @@ Como habíamos bloqueado las tablas, debemos desbloquearlas (quitar el “LOCK�
 
 ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura7.PNG)
 
+En la siguiente imagen vemos que la acción se ha realizado correctamente: 
+
 ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura8.PNG)
 
 Ya podemos ir a la máquina esclavo (maquina2, secundaria) para copiar el archivo .SQL con todos los datos salvados desde la máquina principal (maquina1).
+
 Con el archivo de copia de seguridad en el esclavo ya podemos importar la BD completa en el MySQL. Para ello, en un primer paso creamos la BD:
 
 ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura9.PNG)
