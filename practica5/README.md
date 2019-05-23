@@ -19,14 +19,14 @@ Los objetivos concretos de esta práctica son:
 <H2>Crear una BD e insertar datos</H2>
 Para el resto de la práctica debemos crearnos una BD en MySQL e insertar algunos datos. Así tendremos datos con los cuales hacer las copias de seguridad. En todo momento usaremos la interfaz de línea de comandos del MySQL:
 
-![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura1.PNG)
+        ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura1.PNG)
 
-![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura2.PNG)
+        ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura2.PNG)
 
 Ya tenemos datos (un registro) insertados en nuestra BD llamada “datos”. Podemos haber insertado más registros. Veamos cómo entrar y hacer una consulta:
 
-![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura3.PNG)
+        ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura3.PNG)
 
-![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura4.PNG)
+        ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura4.PNG)
 
 <H2>Replicar una BD MySQL con mysqldump</H2>
