@@ -65,9 +65,14 @@ Con el archivo de copia de seguridad en el esclavo ya podemos importar la BD com
 
 ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura9.PNG)
 
-Y en un segundo paso restauramos los datos contenidos en la BD (se crearán las tablas en el proceso):
+En un segundo paso restauramos los datos contenidos en la BD (se crearán las tablas en el proceso):
 
 ![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura10.PNG)
 
+Y vemos que se ha realizado:
+
+![img](https://github.com/lorcaspal/SWAP1819/blob/master/practica5/images/Captura11.PNG)
+
 <H2>Replicación de BD mediante una configuración
 maestro-esclavo</H2>
+
